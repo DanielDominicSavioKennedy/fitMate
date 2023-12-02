@@ -85,29 +85,6 @@ function classifyPose()
     }
 }
 
-// function gotResult(err, results)
-// {
-//   if (err) console.log(err); 
-//   else
-//     {
-//       if (results[0].confidence > 0.70)
-//         {
-//           select("#asana").html(posesArray[results[0].label-1]); 
-//         }
-//       else
-//         {
-          
-//         }
-      
-     
-//     }
-//   classifyPose(); 
-  
-  
-  
-// }
-
-
 function gotResult(error, results) {
 
   if (results[0].confidence > 0.70) {
@@ -151,18 +128,13 @@ function gotResult(error, results) {
     setTimeout(classifyPose, 100);
 }}
 
-
-
 function nextPose(){
   if (poseCounter >= 5) {
     console.log("Well done, you have learnt all poses!");
     document.getElementById("time").textContent = "Well done!";
     document.getElementById("time2").textContent = "All poses done.";
-    // document.getElementById("sparkles").style.display = 'block';
   }else{
     console.log("Well done, you all poses!");
-    //var stars = document.getElementById("starsid");
-    //stars.classList.add("stars.animated");
     errorCounter = 0;
     iterationCounter = 0;
     poseCounter = poseCounter + 1;
@@ -176,10 +148,6 @@ function nextPose(){
     document.getElementById("time").textContent = "00:" + timeLeft;
     setTimeout(classifyPose, 4000)}
 }
-
-
-
-
 
 
 function draw()

@@ -2,19 +2,12 @@
 <html lang="en">
   <head>
     <%- include('./partials/head'); %>
-    <!-- <style>
-      body {
-        overflow-y: hidden;
-      }
-    </style> -->
     <link rel="stylesheet" href="/css/chat.css" type="text/css" />
   </head>
 
   <body>
     <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
     <script>
-      //   var chat = document.getElementById("chat");
-      //   chat.scrollTop = chat.scrollHeight - chat.clientHeight;
       var people = { friends: [], incoming: [], outgoing: [] };
       var histories = [];
 
@@ -159,15 +152,6 @@
 
           document.getElementById("chat-location").textContent =
             person.city_name;
-
-          // messages.sort(function (x, y) {
-          //   // var tx = x.timestamp.split(/[- :]/);
-          //   // var dx = new Date(Date.UTC(tx[0], tx[1]-1, tx[2], tx[3], tx[4], tx[5]));
-          //   // var ty = y.timestamp.split(/[- :]/);
-          //   // var dy = new Date(Date.UTC(ty[0], ty[1]-1, ty[2], ty[3], ty[4], ty[5]));
-          //   //return dx - dy;
-          //   return x.timestamp - y.timestamp;
-          // });
 
           for (message in messages) {
             var text = document.createElement("div");
@@ -322,23 +306,6 @@
           <div class="pic stark"></div>
           <a class="name" id="chat-name">Tony Stark</a>
           <div class="location" id="chat-location">Today at 12:56</div>
-        </div>
-        <div class="messages" id="chat">
-          <!-- <div class="time">Today at 11:41</div>
-        <div class="message self">Hey, man! What's up, Mr Stark? 👋</div>
-        <div class="message other">Kid, where'd you come from?</div>
-        <div class="message self">Field trip! 🤣</div>
-        <div class="message self">
-          Uh, what is this guy's problem, Mr. Stark? 🤔
-        </div>
-        <div class="message other">
-          Uh, he's from space, he came here to steal a necklace from a wizard.
-        </div>
-        <div class="message other">
-          <div class="typing typing-1"></div>
-          <div class="typing typing-2"></div>
-          <div class="typing typing-3"></div>
-        </div> -->
         </div>
         <div class="input">
           <i class="fas fa-camera"></i><i class="far fa-laugh-beam"></i
