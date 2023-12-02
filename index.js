@@ -76,17 +76,8 @@ io.on("connection", (socket) => {
         io.to(room_code).emit("new_message", message);
         console.log("room "+room_code+ " message "+message )
     });
-    
-    
-
 })
-
-
 
 server.listen(port, () => {
     console.log(`fitMate server listening at http://localhost:${port}`)
 })
-
-
-
-
