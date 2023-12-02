@@ -1,11 +1,13 @@
 .navbar{
     margin: 0px !important;
+    background-color: #363062 !important;
 }
 .homebuttons{
-    margin-top: 200px !important    ;
-    width: 300px !important;
-    height: 200px !important;
+    margin-top: 10px !important    ;
+    width: 375px !important;
+    height: 80%!important;
     text-align: center !important;
+    background-color: rgb(255, 255, 255);
 }
 .headers{
     text-align: center !important;
