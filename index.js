@@ -87,7 +87,7 @@ io.on("connection", (socket) => {
 
 
 server.listen(port, () => {
-    console.log(`vFit server listening at http://localhost:${port}`)
+    console.log(`fitMate server listening at http://localhost:${port}`)
 })
 
 
