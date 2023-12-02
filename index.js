@@ -16,9 +16,6 @@ app.set("view engine", "ejs")
 
 app.use(express.static(__dirname + '/public'));
 app.use("/public", express.static(__dirname + "/public"));
-//^idk why there are two. I am not touching this because some path somewhere will break.
-
-
 
 //backend routes
 app.use("/api/user", require("./routes/user.js"))
