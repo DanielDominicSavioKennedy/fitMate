@@ -4,7 +4,6 @@ var router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const requireLogin = require("../utility/requireLogin.js");
-const con = require("../utility/dbConnection.js");
 const jwt_expiry_time = "3 days";
 
 //adds a new user to db, requires { username, password, email, city_id }

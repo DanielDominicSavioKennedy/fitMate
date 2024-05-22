@@ -9,7 +9,6 @@ var express = require('express');
 
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
-const con = require('./dbConnection.js')
 
 const requireLogin = (req, res, next) => {
     const {authorization} = req.headers;

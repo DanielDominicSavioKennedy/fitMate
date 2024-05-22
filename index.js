@@ -19,7 +19,6 @@ app.use("/public", express.static(__dirname + "/public"));
 
 //backend routes
 app.use("/api/user", require("./routes/user.js"))
-app.use("/api/room", require("./routes/room.js"))
 app.use(router)
 
 //frontend routes
